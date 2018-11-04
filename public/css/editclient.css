@@ -1,0 +1,24 @@
+#section-editclient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.editclient-title {
+    padding: 1em;
+}
+
+.editclient-title h4 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#btn-editclient {
+    box-shadow: 2px 2px 8px #000;
+}
+
+#btn-editclient:hover {
+    box-shadow: none;
+    background: #222 !important;
+}

@@ -1,0 +1,104 @@
+<section id="section-editclient" class="section">
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col s12">
+                {{#if errors}}
+                    {{#each errors}}
+                        <div class="alert alert-error valign-wrapper">
+                            <span>{{msg}}</span>
+                            <span id="btn-close" class="alert-close">&times;</span>
+                        </div>
+                    {{/each}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    {{#if title}}
+        <div class="container editclient-title">
+            <h4>{{ title }}</h4>
+            <hr>
+        </div>
+    {{/if}}
+    <div class="container">
+        <div class="card-panel card-editclient">
+            <form action="/nodeville/edit.client/{{client._id}}" method="POST" id="edit-client">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="fname" name="fname" value="{{client.first_name}}">
+                            <label for="fname">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="lname" name="lname" value="{{client.last_name}}">
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <input type="email" id="email" name="email" class="validate" value="{{client.email}}">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="age" name="age" class="" value="{{client.age}}">
+                            <label for="age">Age</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="gender" name="gender" class="" value="{{client.gender}}">
+                            <label for="gender">Gender</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <input type="text" id="contact" name="contact" class="" value="{{client.contact_number}}">
+                            <label for="contact">Contact Info</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="creditcard" name="creditcard" class="" value="{{client.creditcard_number}}">
+                            <label for="creditcard">Credit Card No</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="input-field">
+                            <input type="text" id="postalcode" name="postalcode" class="" value="{{client.postal_code}}">
+                            <label for="postalcode">Pastal Code / Id Card No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <input type="text" id="country" name="country" class="" value="{{client.country}}">
+                            <label for="country">Country</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" name="message" id="message">{{client.message}}</textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" type="submit" class="btn green waves-effect waves-light" id="btn-editclient">Update Client</button>
+            </form>
+        </div>
+    </div>
+</section>

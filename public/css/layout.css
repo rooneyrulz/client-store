@@ -1,0 +1,80 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.header-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 37px;
+    line-height: 37px;
+}
+
+nav {}
+
+.brand-logo {
+    font-weight: bold;
+    font-size: 25px !important;
+}
+
+.sidenav-trigger {
+    height: 37px !important;
+}
+
+.sidenav-trigger i {
+    height: 37px !important;
+    line-height: 37px !important;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li {
+    margin: 0 .40em;
+    border-radius: .75rem;
+}
+
+nav ul li:hover {
+    background: #111;
+}
+
+#nav-login, #nav-logout {
+    display: inline-block;
+}
+
+#nav-profile {
+    animation: nav-profile 4s linear infinite forwards;
+}
+
+@keyframes nav-profile {
+    form {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+#section-messages {
+    position: absolute;
+    width: 100%;
+    margin: 50px auto 20px;
+}
+
+#section-messages .row {
+    margin: 0;
+}

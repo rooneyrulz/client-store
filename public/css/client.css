@@ -1,0 +1,52 @@
+#section-client {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.client-title {
+    padding: 1em;
+}
+
+.content-user ul {
+    margin: 0;
+    border-radius: 2em 0 2em 0 !important;
+    font-style: italic;
+}
+
+.content-user ul strong {
+    font-weight: bold;
+}
+
+.content-user ul li {
+    background: #222 !important;
+    color: #f4f4f4;
+}
+
+.client-title h4 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-client {
+    position: relative;
+}
+
+#btn-edit {
+    box-shadow: 2px 2px 8px #000;
+    border: none;
+}
+
+#btn-edit:hover {
+    background: #222 !important;
+}
+
+#btn-delete {
+    box-shadow: 2px 2px 8px #000;
+    border: none;
+}
+
+#btn-delete:hover {
+    background: rgb(172, 30, 30) !important;
+}

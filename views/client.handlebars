@@ -1,0 +1,85 @@
+<section id="section-client" class="section">
+    <br><br><br>
+        <div class="container">
+            <div class="content-user left">
+                <ul class="collection">
+                    <li class="collection-item">
+                        <strong>Employee: </strong>
+                        <span>{{user.first_name}} {{user.last_name}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-user right">
+                <ul class="collection">
+                    <li class="collection-item">
+                        <strong>Client: </strong>
+                        <span>{{client.first_name}} {{client.last_name}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div><br><br>
+        <div class="container client-title">
+            {{#if title}}
+                <h4>{{title}}</h4>
+                <hr>
+            {{/if}}
+        </div>
+    <div class="container">
+        {{#if client}}
+            <div class="client">
+                <div class="card-panel card-client">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <strong>First Name</strong>
+                            <span class="right">{{client.first_name}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Last Name</strong>
+                            <span class="right">{{client.last_name}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Email Id</strong>
+                            <span class="right">{{client.email}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Age</strong>
+                            <span class="right">{{client.age}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Gender</strong>
+                            <span class="right">{{client.gender}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Contact Info</strong>
+                            <span class="right">{{client.contact_number}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Credit Card Id</strong>
+                            <span class="right">{{client.creditcard_number}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Postal Code</strong>
+                            <span class="right">{{client.postal_code}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Country</strong>
+                            <span class="right">{{client.country}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Message</strong>
+                            <span class="right">{{client.message}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Client Id</strong>
+                            <span class="right">{{client._id}}</span>
+                        </li>
+                    </ul>
+                    <div class="card-action right-align">
+                        <a href="/nodeville/edit.client/{{client._id}}" type="button" class="btn green waves-effect waves-light" id="btn-edit">Edit</a>
+                        <a data-id="{{client._id}}" type="button" class="btn red waves-effect waves-light" id="btn-delete">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</section>

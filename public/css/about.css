@@ -1,0 +1,28 @@
+#section-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.about-title {
+    padding: 1em;
+}
+
+.about-title h3 {
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.about-content .row {
+    margin: 0;
+}
+
+.about-content p {
+    font-size: 1em;
+}
+
+.footer p {
+    font-style: italic;
+}

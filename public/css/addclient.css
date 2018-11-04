@@ -1,0 +1,24 @@
+#section-addclient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.addclient-title {
+    padding: 1em;
+}
+
+.addclient-title h4 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#btn-addclient {
+    box-shadow: 2px 2px 8px #000;
+}
+
+#btn-addclient:hover {
+    box-shadow: none;
+    background: #222 !important;
+}

@@ -1,0 +1,49 @@
+<section id="section-allclients" class="section">
+    <br><br><br><br>
+    <div class="container section-search">
+        <div class="row">
+            <div class="col s8">
+                <br>
+                <div class="client-count">
+                    <span>Client Count: </span>{{clients.length}}
+                </div>
+            </div>
+            <div class="col s4 col-form">
+                <div class="input-field">
+                    <input type="text" class="" name="search" id="search" placeholder="search by name..">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container allclients-title">
+        {{#if title}}
+            <h4>{{ title }}</h4>
+        {{/if}}
+        <hr>
+    </div>
+    <div class="container">
+        {{#if clients}}
+            {{#each clients as |client|}}
+                <div class="card-panel card-allclients">
+                    <ul class="collection collection-allclients">
+                        <li class="collection-item">
+                            <strong>Name</strong>
+                            <span id="search-name" class="right">{{client.first_name}} {{client.last_name}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Email Id</strong>
+                            <span class="right">{{client.email}}</span>
+                        </li>
+                        <li class="collection-item">
+                            <strong>Country</strong>
+                            <span class="right">{{client.country}}</span>
+                        </li>
+                    </ul>
+                    <div class="card-action right-align">
+                        <a href="/nodeville/get.client/{{client._id}}" type="button" class="btn green darken-1 waves-effect waves-light" id="btn-view">View</a>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </div>
+</section>

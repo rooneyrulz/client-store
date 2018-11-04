@@ -1,0 +1,28 @@
+.alert {
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 1px #111
+}
+
+#btn-close {
+    position: absolute;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.alert-success {
+    padding: .80em;
+    border-radius: .50rem;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    padding: .80em;
+    border-radius: .50rem;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}

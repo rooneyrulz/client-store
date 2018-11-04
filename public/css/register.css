@@ -1,0 +1,24 @@
+#section-register {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.register-title {
+    padding: 1em;
+}
+
+.register-title h4 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#btn-register {
+    box-shadow: 2px 2px 8px #000;
+}
+
+#btn-register:hover {
+    box-shadow: none;
+    background: #222 !important;
+}

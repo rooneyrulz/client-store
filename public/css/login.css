@@ -1,0 +1,24 @@
+#section-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.login-title {
+    padding: 1em;
+}
+
+.login-title h4 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#btn-login {
+    box-shadow: 4px 2px 8px #000;
+}
+
+#btn-login:hover {
+    box-shadow: none;
+    background: #222 !important;
+}
