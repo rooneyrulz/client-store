@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //Connecting to MongoDB
-mongoose.connect('mongodb://localhost: ' + process.env.MONGO_PORT + '/node_ville', {
+mongoose.connect( process.env.MONGO_CONNECTION_STRING , {
     useNewUrlParser: true,
     useCreateIndex: true
 });
